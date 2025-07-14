@@ -1,0 +1,51 @@
+body {
+    background-color: #1B1B1B;
+    color: #F6E8EA;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+}
+
+/* Tabs container */
+.tabs {
+  background-color: #1E1E1E;
+  color: #F28482;
+}
+
+/* Tab buttons */
+.tab {
+  background-color: transparent;
+  color: #F6BD60;
+  transition: color 0.3s;
+}
+
+.tab:hover,
+.tab:checked {
+  color: #F28482;
+}
+
+/* Tab content area */
+.tab-content {
+  background-color: #1E1E1E;
+  color: #F8F8F8;
+}
+
+/* Card (dish container) */
+.tab-content .bg-\[\#2B2B2B\] {
+  background-color: #2A2A2A !important;
+}
+
+.tab-content h2,
+.tab-content h3 {
+  color: #F8F8F8;
+}
+
+.tab-content p {
+  color: #B0B0B0;
+}
+

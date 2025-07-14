@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/vs.jpg" type="image/jpg">
+    <title>Villa Sereno - Home</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <!-- Tailwind and DaisyUI (Fixed) -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="navbar bg-base-100 shadow-sm bg-black text-white h-[13vh] md:h-[8vh]">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-black rounded-box z-1 mt-3 w-52 p-2 shadow text-white">
+                        <li><a href="/index.html">Homepage</a></li>
+                        <li><a href="/pages/menu.html">Menu</a></li>
+                        <li><a href="/pages/gallery.html">Gallery</a></li>
+                        <li><a href="/pages/about.html">About Us</a></li>
+                        <li><a href="/pages/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <a class=" btn-ghost text-2xl font-bold" href="#"><em>Villa Sereno</em></a>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                        <span class="badge badge-xs badge-primary indicator-item"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="custom-hero-wrapper">
+            <div class="custom-hero-content">
+                <h1>Villa Sereno | Bold Flavors. Crafted Moments.</h1>
+                <p><em>Experience dining redefined with every bite.</em></p>
+                <a href="/pages/menu.html" class="hero-button">Explore Now</a>
+            </div>
+        </section>
+
+
+        <!-- Feature Cards section -->
+        <section class="features">
+            <div class="features-content">
+                <div class="feature__card m-5">
+                    <div class="feature_img">
+                        <img src="/images/hero-img1.jpg" alt="Food Bowl">
+                    </div>
+                    <div class="feature-text text-center">
+                        <h1 class="text-[40px]">Perfectly crafted dishes</h1>
+                        <p>"Explore our mouth-watering selection of dishes, from local favorites to international
+                            delights."
+                        </p>
+                    </div>
+                    <button class="bg-[#D72638] p-2 m-1"><a href="/pages/menu.html">View Menu</a></button>
+                </div>
+                <div class="feature__card m-5">
+                    <div class="feature_img">
+                        <img src="/images/about-feat_card.jpg" alt="Cook">
+                    </div>
+                    <div class="feature-text text-center">
+                        <p class="text-[20px]"><b>Welcome to Villa Sereno</b> – where passion for food
+                            meets a touch of elegance. Nestled in the heart of the city, we offer a cozy escape with
+                            handcrafted dishes inspired by Mediterranean flavors and warm hospitality. Whether you're
+                            here
+                            for a quiet dinner or a lively gathering, Villa Sereno is your home for memorable dining
+                            experiences.</p>
+                    </div>
+                    <button class="bg-[#D72638] p-2 m-1"><a href="/pages/gallery.html">Find Out More</a></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Table  -->
+        <div class="max-w-3xl mx-auto bg-[#1B1B1B] p-6 rounded-2xl shadow-md text-[#F6E8EA]">
+            <h2 class="text-2xl font-bold mb-4">🍴 Villa Sereno Signature Dishes</h2>
+
+            <table class="min-w-full table-auto border border-gray-700">
+                <thead class="bg-[#2A2A2A] text-[#F6E8EA]">
+                    <tr>
+                        <th class="px-4 py-2 text-left font-semibold">Dish</th>
+                        <th class="px-4 py-2 text-left font-semibold">Description</th>
+                        <th class="px-4 py-2 text-right font-semibold">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t border-gray-700">
+                        <td class="px-4 py-2 font-medium">Grilled Lemon Herb Chicken</td>
+                        <td class="px-4 py-2">Marinated in lemon, rosemary & olive oil, with roasted vegetables.</td>
+                        <td class="px-4 py-2 text-right">$14.95</td>
+                    </tr>
+                    <tr class="border-t border-gray-700">
+                        <td class="px-4 py-2 font-medium">Seafood Paella</td>
+                        <td class="px-4 py-2">Saffron rice, shrimp, mussels, and calamari with garden veggies.</td>
+                        <td class="px-4 py-2 text-right">$18.50</td>
+                    </tr>
+                    <tr class="border-t border-gray-700">
+                        <td class="px-4 py-2 font-medium">Mushroom Truffle Risotto (V)</td>
+                        <td class="px-4 py-2">Arborio rice with truffle oil, wild mushrooms, and parmesan.</td>
+                        <td class="px-4 py-2 text-right">$15.25</td>
+                    </tr>
+                    <tr class="border-t border-gray-700">
+                        <td class="px-4 py-2 font-medium">Lamb Kofta Skewers</td>
+                        <td class="px-4 py-2">Spiced lamb skewers with tzatziki, couscous & pita.</td>
+                        <td class="px-4 py-2 text-right">$16.75</td>
+                    </tr>
+                    <tr class="border-t border-gray-700">
+                        <td class="px-4 py-2 font-medium">Mediterranean Mezze Platter (V)</td>
+                        <td class="px-4 py-2">Hummus, baba ganoush, grape leaves, olives & flatbread.</td>
+                        <td class="px-4 py-2 text-right">$12.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="mt-6 text-center">
+                <a href="/pages/menu.html"
+                    class="inline-block bg-[#D72638] hover:bg-[#F46036] text-[#F6E8EA] font-semibold py-2 px-6 rounded-xl 
+                    transition duration-300 ease-in-out shadow-[0_6px_18px_rgba(244,96,54,0.6)] hover:shadow-[0_8px_24px_rgba(244,96,54,0.75)]">
+                    View Full Menu
+                </a>
+            </div>
+        </div>
+
+        <!-- Signature Dishes -->
+        <section class="bg-[#1B1B1B] text-white py-16 px-6">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Top 6 Signature Dishes</h2>
+                <p class="mb-10 text-gray-300 max-w-xl">Enjoy our most celebrated creations, handcrafted with
+                    Mediterranean flair and modern elegance.</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Dish 1 -->
+                    <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                        <img src="/images/feta.jpg" alt="Feta Watermelon Salad"
+                            class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-xl font-semibold mb-2">Feta Watermelon Salad</h3>
+                        <p class="text-gray-400 text-sm">Juicy watermelon cubes, creamy feta, mint leaves, and balsamic
+                            glaze—light and refreshing.</p>
+                    </div>
+
+                    <!-- Dish 2 -->
+                    <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                        <img src="/images/pasta.jpg" alt="Sun-Dried Tomato Pasta"
+                            class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-xl font-semibold mb-2">Sun-Dried Tomato Pasta</h3>
+                        <p class="text-gray-400 text-sm">Penne tossed in a creamy sun-dried tomato sauce with basil,
+                            garlic, and shaved parmesan.</p>
+                    </div>
+
+                    <!-- Dish 3 -->
+                    <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                        <img src="/images/stuffed.jpg" alt="Stuffed Eggplant Boats"
+                            class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-xl font-semibold mb-2">Stuffed Eggplant Boats</h3>
+                        <p class="text-gray-400 text-sm">Baked eggplant filled with spiced quinoa, tomatoes, pine nuts,
+                            and feta, drizzled with tahini.</p>
+                    </div>
+
+                    <!-- Dish 4 -->
+                    <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                        <img src="/images/fillet.jpg" alt="Herbed Sea Bass Fillet"
+                            class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-xl font-semibold mb-2">Herbed Sea Bass Fillet</h3>
+                        <p class="text-gray-400 text-sm">Pan-seared Mediterranean sea bass with lemon-caper butter and
+                            wild rice pilaf.</p>
+                    </div>
+
+                    <!-- Dish 5 -->
+                    <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                        <img src="/images/flatbread.jpg" alt="Za'atar Flatbread"
+                            class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-xl font-semibold mb-2">Za'atar Flatbread</h3>
+                        <p class="text-gray-400 text-sm">Oven-baked flatbread brushed with olive oil and za’atar spice
+                            blend, served warm with labneh.</p>
+                    </div>
+
+                    <!-- Dish 6 -->
+                    <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                        <img src="/images/pistachio.jpg" alt="Rose Pistachio Panna Cotta"
+                            class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-xl font-semibold mb-2">Rose Pistachio Panna Cotta</h3>
+                        <p class="text-gray-400 text-sm">Creamy rosewater panna cotta topped with chopped pistachios and
+                            a hint of orange blossom.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Carousel -->
+        <div class="flex items-center justify-center lg:min-h-screen mt-0 md:mb-2">
+            <div class="carousel rounded-box w-4/5 mx-auto md:h-1/5 h-[80vh] md:mb-2">
+                <div class="carousel-item w-1/2">
+                    <img src="/images/cr1.jpg" class="w-full" />
+                </div>
+                <div class="carousel-item w-1/2">
+                    <img src="/images/cr2.jpg" class="w-full" />
+                </div>
+                <div class="carousel-item w-1/2">
+                    <img src="/images/cr3.jpg" class="w-full" />
+                </div>
+                <div class="carousel-item w-1/2">
+                    <img src="/images/cr4.jpg" class="w-full" />
+                </div>
+                <div class="carousel-item w-1/2">
+                    <img src="/images/cr5.jpg" class="w-full" />
+                </div>
+                <div class="carousel-item w-1/2">
+                    <img src="/images/cr6.jpg" class="w-full" />
+                </div>
+                <div class="carousel-item w-1/2">
+                    <img src="/images/cr7.jpg" class="w-full" />
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Contact Section -->
+        <section class="bg-[#1B1B1B] text-[#F6E8EA] px-4 py-10">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-4xl font-bold text-[#CBA135] text-center">Contact Us</h1>
+                <hr class="w-40 border-t-4 border-[#CBA135] my-6 mx-auto">
+
+                <!-- Social Media Icons -->
+                <div class="flex justify-center gap-6 py-5 text-[#F6E8EA]">
+                    <a><i class="fa-brands fa-instagram fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-linkedin fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-facebook fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-square-x-twitter fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-youtube fa-2x hover:text-[#F46036] transition"></i></a>
+                </div>
+                <!-- Footer Bottom -->
+                <p class="bg-[#1B1B1B] text-center text-[#CBA135] text-lg py-4 border-t border-[#CBA135]">
+                    &copy; 2025 Villa Sereno | All rights reserved.
+                </p>
+    </footer>
+
+</body>
+
+</html>

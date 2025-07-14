@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/vs.jpg" type="image/jpg">
+    <title>Villa Sereno - Gallery</title>
+    <link rel="stylesheet" href="/styles/gallery.css">
+
+    <!-- Tailwind and DaisyUI (Fixed) -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-base-100 text-base-content">
+    <header>
+        <!-- Navbar -->
+        <div class="navbar bg-base-100 shadow-sm bg-black text-white h-[13vh] md:h-[8vh]">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-black rounded-box z-1 mt-3 w-52 p-2 shadow text-white">
+                        <li><a href="/index.html">Homepage</a></li>
+                        <li><a href="/pages/menu.html">Menu</a></li>
+                        <li><a href="/pages/gallery.html">Gallery</a></li>
+                        <li><a href="/pages/about.html">About Us</a></li>
+                        <li><a href="/pages/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <a class=" btn-ghost text-2xl font-bold" href="#"><em>Villa Sereno</em></a>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                        <span class="badge badge-xs badge-primary indicator-item"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-[70px]">
+
+        <!-- Hero Section -->
+        <section
+            class="hero min-h-[40vh] bg-gradient-to-r from-amber-400 to-amber-600 text-white flex flex-col justify-center items-center text-center p-1 mt-5">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Our Delicious Gallery</h1>
+            <p class="max-w-xl text-lg md:text-xl">Feast your eyes on our mouth-watering dishes, crafted to perfection!
+            </p>
+        </section>
+
+        <!-- DaisyUI Diff Section -->
+        <figure class="diff aspect-16/9 h-[50vh]" tabindex="0">
+            <div class="diff-item-1" role="img" tabindex="0">
+                <img alt="daisy" src="/images/about-feat_card.jpg" />
+            </div>
+            <div class="diff-item-2" role="img">
+                <img alt="daisy" src="/images/about-feat_card-blur.jpg" />
+            </div>
+            <div class="diff-resizer"></div>
+        </figure>
+
+        <!-- Gallery Section -->
+        <section class="container mx-auto px-4 py-12">
+            <h2 class="text-3xl font-semibold mb-8 text-center">Gallery</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+                <!-- Gallery Card -->
+                <div
+                    class="card card-compact bg-base-200 shadow-lg hover:shadow-xl transition-shadow rounded-lg overflow-hidden">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80"
+                            alt="Dish 1" class="w-full h-48 object-cover" />
+                    </figure>
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-lg font-semibold text-[#1B1B1B]">Grilled Salmon</h3>
+                        <p class="text-sm text-[#F46036]">Fresh Atlantic salmon grilled with herbs.</p>
+                    </div>
+                </div>
+                <div
+                    class="card card-compact bg-base-200 shadow-lg hover:shadow-xl transition-shadow rounded-lg overflow-hidden">
+                    <figure>
+                        <img src="/images/burger.jpg" alt="Burger" class="w-full h-48 object-cover" />
+                    </figure>
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-lg font-semibold text-[#1B1B1B]">Classic Burger</h3>
+                        <p class="text-sm text-[#F46036]">Juicy beef patty with fresh toppings and melted cheese.</p>
+                    </div>
+                </div>
+                <div
+                    class="card card-compact bg-base-200 shadow-lg hover:shadow-xl transition-shadow rounded-lg overflow-hidden">
+                    <figure>
+                        <img src="/images/steak.jpg" alt="Steak" class="w-full h-48 object-cover" />
+                    </figure>
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-lg font-semibold text-[#1B1B1B]">Smoked Steak</h3>
+                        <p class="text-sm text-[#F46036]">Tender, juicy steak slow-smoked to perfection—rich, flavorful,
+                            and kissed with natural wood-fired aroma.</p>
+                    </div>
+                </div>
+                <div
+                    class="card card-compact bg-base-200 shadow-lg hover:shadow-xl transition-shadow rounded-lg overflow-hidden">
+                    <figure>
+                        <img src="/images/chickenwings.jpg" alt="Chicken" class="w-full h-48 object-cover" />
+                    </figure>
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-lg font-semibold text-[#1B1B1B]">Chicken Wings</h3>
+                        <p class="text-sm text-[#F46036]">Crispy, juicy wings tossed in your choice of sauce—perfectly
+                            bold, flavorful, and made to share (or not).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Contact Section -->
+        <section class="bg-[#1B1B1B] text-[#F6E8EA] px-4 py-10">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-4xl font-bold text-[#CBA135] text-center">Contact Us</h1>
+                <hr class="w-40 border-t-4 border-[#CBA135] my-6 mx-auto">
+
+                <!-- Social Media Icons -->
+                <div class="flex justify-center gap-6 py-5 text-[#F6E8EA]">
+                    <a><i class="fa-brands fa-instagram fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-linkedin fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-facebook fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-square-x-twitter fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-youtube fa-2x hover:text-[#F46036] transition"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Bottom -->
+        <p class="bg-[#1B1B1B] text-center text-[#CBA135] text-lg py-4 border-t border-[#CBA135]">
+            &copy; 2025 Villa Sereno | All rights reserved.
+        </p>
+    </footer>
+
+</body>
+
+</html>
+
+</html>

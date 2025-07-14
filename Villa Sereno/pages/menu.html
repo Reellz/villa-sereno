@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/vs.jpg" type="image/jpg">
+    <title>Villa Sereno - Menu</title>
+    <link rel="stylesheet" href="/styles/menu.css">
+
+    <!-- Tailwind and DaisyUI (Fixed) -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="navbar bg-base-100 shadow-sm bg-black text-white h-[13vh]  md:h-[8vh]">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-black rounded-box z-1 mt-3 w-52 p-2 shadow text-white">
+                        <li><a href="/index.html">Homepage</a></li>
+                        <li><a href="/pages/menu.html">Menu</a></li>
+                        <li><a href="/pages/gallery.html">Gallery</a></li>
+                        <li><a href="/pages/about.html">About Us</a></li>
+                        <li><a href="/pages/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <a class=" btn-ghost text-2xl font-bold" href="#"><em>Villa Sereno</em></a>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                        <span class="badge badge-xs badge-primary indicator-item"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="">
+        <div class="tabs tabs-border text-[#CBA135] bg-[#F6E8EA] flex align-center justify-center mt-[60px]">
+            <input type="radio" name="my_tabs_2" class="tab p-5 m-5" aria-label="Appetizers" />
+            <div class="tab-content p-10">
+                <div class="max-w-7xl mx-auto bg-[#2B2B2B]">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Appetizers</h2>
+                    <p class="mb-10 text-gray-300 max-w-xl"><em>"A Taste to Begin the Journey – Small Bites, Big
+                            Flavors."</em></p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Appetizer 1 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/appetizers/buffalo-cauliflower-recipe.jpg" alt="Buffalo Cauliflower Wings"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Buffalo Cauliflower Wings.</h3>
+                            <p class="text-gray-400 text-sm">Crispy, golden cauliflower bites tossed in spicy buffalo
+                                sauce, served with cool ranch or creamy vegan dip — the perfect plant-powered kickstart
+                                to your meal.</p>
+                        </div>
+
+                        <!-- Appetizer 2 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/appetizers/deviled-eggs.jpg" alt="Deviled Eggs"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Deviled Eggs</h3>
+                            <p class="text-gray-400 text-sm">Classic hard-boiled eggs filled with a creamy, tangy yolk
+                                blend of mustard, mayo, and spices — a timeless bite-sized favorite with a hint of heat
+                                and elegance.</p>
+                        </div>
+
+                        <!--Appetizer 3 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/appetizers/stuffed-mushrooms.jpg" alt="Stuffed Mushrooms"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Stuffed Mushrooms</h3>
+                            <p class="text-gray-400 text-sm">Tender mushroom caps filled with a savory blend of herbs,
+                                garlic, cream cheese, and breadcrumbs — baked to golden perfection for a rich, earthy
+                                starter.</p>
+                        </div>
+
+                        <!-- Dish 4 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/appetizers/jalapeno-poppers.jpg" alt="Jalapeño Poppers"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Jalapeño Poppers</h3>
+                            <p class="text-gray-400 text-sm">Crisp jalapeños stuffed with a zesty cream cheese filling,
+                                wrapped in golden breadcrumbs and lightly fried — a bold, cheesy bite with just the
+                                right kick.</p>
+                        </div>
+
+                        <!-- Appetizer 5 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/appetizers/caprese-skewers.jpg" alt="Capresse Skewers"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Capresse Skewers</h3>
+                            <p class="text-gray-400 text-sm">A fresh and vibrant bite of cherry tomatoes, creamy
+                                mozzarella, and fragrant basil, drizzled with balsamic glaze — the perfect balance of
+                                light, crisp, and classic Italian flavor.</p>
+                        </div>
+
+                        <!-- Appetizer 6 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/pistachio.jpg" alt="Rose Pistachio Panna Cotta"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Rose Pistachio Panna Cotta</h3>
+                            <p class="text-gray-400 text-sm">Creamy rosewater panna cotta topped with chopped pistachios
+                                and
+                                a hint of orange blossom.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="my_tabs_2" class="tab p-5 m-5" aria-label="Main Dishes" checked="checked" />
+            <div class="tab-content p-10">
+                <div class="max-w-7xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Main Dishes</h2>
+                    <p class="mb-10 text-gray-300 max-w-xl"><em>"Hearty Plates, Crafted to Satisfy – Where Flavor Takes
+                            Center Stage."</em></p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Dish 1 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/feta.jpg" alt="Feta Watermelon Salad"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Feta Watermelon Salad</h3>
+                            <p class="text-gray-400 text-sm">Juicy watermelon cubes, creamy feta, mint leaves, and
+                                balsamic
+                                glaze—light and refreshing.</p>
+                        </div>
+
+                        <!-- Dish 2 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/pasta.jpg" alt="Sun-Dried Tomato Pasta"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Sun-Dried Tomato Pasta</h3>
+                            <p class="text-gray-400 text-sm">Penne tossed in a creamy sun-dried tomato sauce with basil,
+                                garlic, and shaved parmesan.</p>
+                        </div>
+
+                        <!-- Dish 3 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/stuffed.jpg" alt="Stuffed Eggplant Boats"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Stuffed Eggplant Boats</h3>
+                            <p class="text-gray-400 text-sm">Baked eggplant filled with spiced quinoa, tomatoes, pine
+                                nuts,
+                                and feta, drizzled with tahini.</p>
+                        </div>
+
+                        <!-- Dish 4 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/fillet.jpg" alt="Herbed Sea Bass Fillet"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Herbed Sea Bass Fillet</h3>
+                            <p class="text-gray-400 text-sm">Pan-seared Mediterranean sea bass with lemon-caper butter
+                                and
+                                wild rice pilaf.</p>
+                        </div>
+
+                        <!-- Dish 5 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/flatbread.jpg" alt="Za'atar Flatbread"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Za'atar Flatbread</h3>
+                            <p class="text-gray-400 text-sm">Oven-baked flatbread brushed with olive oil and za’atar
+                                spice
+                                blend, served warm with labneh.</p>
+                        </div>
+
+                        <!-- Dish 6 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/pistachio.jpg" alt="Rose Pistachio Panna Cotta"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Rose Pistachio Panna Cotta</h3>
+                            <p class="text-gray-400 text-sm">Creamy rosewater panna cotta topped with chopped pistachios
+                                and
+                                a hint of orange blossom.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="my_tabs_2" class="tab p-5 m-5" aria-label="Dessert" />
+            <div class="tab-content p-10">
+                <div class="max-w-7xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Desserts</h2>
+                    <p class="mb-10 text-gray-300 max-w-xl"><em>"A Sweet Finale – Indulgence Worth Every Bite."</em></p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Dessert 1 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/desserts/strawberry.jpg" alt="Dipped Strawberries"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Dipped Strawberries</h3>
+                            <p class="text-gray-400 text-sm">Juicy, fresh strawberries hand-dipped in rich, velvety
+                                chocolate for the perfect sweet treat.</p>
+                        </div>
+
+                        <!-- Dessert 2 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/desserts/bundt-cake.jpg" alt="Apple Bundt Cake"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Apple Bundt Cake</h3>
+                            <p class="text-gray-400 text-sm">Moist and spiced with cinnamon, this classic bundt cake is
+                                packed with fresh apples and topped with a light glaze for a warm, comforting finish.
+                            </p>
+                        </div>
+
+                        <!-- Dessert 3 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/desserts/banoffee-pie.jpg" alt="Banofee Pie"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Banofee Pie</h3>
+                            <p class="text-gray-400 text-sm">A luscious layered dessert with a buttery biscuit base,
+                                sweet toffee, sliced bananas, and a cloud of whipped cream—an irresistible classic.</p>
+                        </div>
+
+                        <!-- Dessert 4 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/desserts/hawaiian.jpg" alt="Hawaiian Wedding Cake"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Hawaiian Wedding Cake</h3>
+                            <p class="text-gray-400 text-sm">A tropical delight made with crushed pineapple, coconut,
+                                and pecans, topped with a light cream cheese frosting—moist, dreamy, and
+                                island-inspired.</p>
+                        </div>
+
+                        <!-- Dessert 5 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/desserts/cheesecake.jpg" alt="Lime Cheesecake"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Lime Cheesecake</h3>
+                            <p class="text-gray-400 text-sm">Creamy, tangy, and refreshingly smooth—our lime cheesecake
+                                sits on a buttery graham crust and is finished with a hint of citrus zest for a bright
+                                twist on a classic.</p>
+                        </div>
+
+                        <!-- Dessert 6 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/desserts/choco-pizookie.jpg" alt="Chocolate Chip Pizookie"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Chocolate Chip Pizookie</h3>
+                            <p class="text-gray-400 text-sm">A warm, gooey chocolate chip cookie baked in a skillet and
+                                served fresh with a scoop of vanilla ice cream—melty, chewy, and impossible to resist.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="my_tabs_2" class="tab p-5 m-5" aria-label="Drinks" />
+            <div class="tab-content p-10 bg-[#1B1B1B]">
+                <div class="max-w-7xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Drinks</h2>
+                    <p class="mb-10 text-gray-300 max-w-xl"><em>"Sip, Savor, Refresh – Perfect Pairings for Every
+                            Plate."</em></p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Drink 1 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/drinks/caramel-apple-shake.jpg" alt="Caramel Fuji Apple Donut Shake"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Caramel Fuji Apple Donut Shake</h3>
+                            <p class="text-gray-400 text-sm">A creamy blend of caramel, crisp Fuji apples, and donut
+                                crumbles—topped with whipped cream and a caramel drizzle. Dessert in a glass!</p>
+                        </div>
+
+                        <!-- Drink 2 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/drinks/cranberry-smoothie.jpg" alt="Cranberry Orange Smoothie"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Cranberry Orange Smoothie</h3>
+                            <p class="text-gray-400 text-sm">A bright, tangy blend of tart cranberries and juicy
+                                oranges—refreshingly smooth and packed with zingy flavor.</p>
+                        </div>
+
+                        <!-- Drink 3 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/drinks/man-coffee.jpg" alt="Cold Mango Coffee"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Cold Mango Coffee</h3>
+                            <p class="text-gray-400 text-sm">A bold fusion of smooth cold brew and sweet
+                                mango—refreshing, tropical, and unexpectedly addictive.</p>
+                        </div>
+
+                        <!-- Drink 4 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/drinks/mango-mint-soda.jpg" alt="Mango Mint Soda"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Mango Mint Soda</h3>
+                            <p class="text-gray-400 text-sm">A sparkling blend of juicy mango and fresh mint—light,
+                                fizzy, and perfect for a tropical cool-down</p>
+                        </div>
+
+                        <!-- Drink 5 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/drinks/raspberry-mimosa.jpg" alt="Raspberry Mimosa"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Raspberry Mimosa</h3>
+                            <p class="text-gray-400 text-sm">A sparkling twist on a classic, blending fresh raspberries
+                                with crisp champagne for a bright and bubbly celebration in every sip.</p>
+                        </div>
+
+                        <!-- Drink 6 -->
+                        <div class="bg-[#2B2B2B] rounded-lg p-4 shadow-md">
+                            <img src="/images/drinks/sparkling-rosemary.jpg" alt="Sparkling Rosemary Berry Sangria"
+                                class="rounded-lg mb-4 w-full h-48 object-cover">
+                            <h3 class="text-xl font-semibold mb-2">Sparkling Rosemary Berry Sangria</h3>
+                            <p class="text-gray-400 text-sm">A vibrant mix of juicy berries, fragrant rosemary, and
+                                sparkling wine—refreshingly herbal with a fruity sparkle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Contact Section -->
+        <section class="bg-[#1B1B1B] text-[#F6E8EA] px-4 py-10">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-4xl font-bold text-[#CBA135] text-center">Contact Us</h1>
+                <hr class="w-40 border-t-4 border-[#CBA135] my-6 mx-auto">
+
+                <!-- Social Media Icons -->
+                <div class="flex justify-center gap-6 py-5 text-[#F6E8EA]">
+                    <a><i class="fa-brands fa-instagram fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-linkedin fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-facebook fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-square-x-twitter fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-youtube fa-2x hover:text-[#F46036] transition"></i></a>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <p class="bg-[#1B1B1B] text-center text-[#CBA135] text-lg py-4 border-t border-[#CBA135]">
+                &copy; 2025 Villa Sereno | All rights reserved.
+            </p>
+    </footer>
+</body>
+
+</html>

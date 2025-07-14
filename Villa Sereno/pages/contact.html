@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/vs.jpg" type="image/jpg">
+    <title>Villa Sereno - Contact Us</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <!-- Tailwind and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="navbar bg-base-100 shadow-sm bg-black text-white h-[13vh] md:h-[8vh]">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-black rounded-box z-1 mt-3 w-52 p-2 shadow text-white">
+                        <li><a href="/index.html">Homepage</a></li>
+                        <li><a href="/pages/menu.html">Menu</a></li>
+                        <li><a href="/pages/gallery.html">Gallery</a></li>
+                        <li><a href="/pages/about.html">About Us</a></li>
+                        <li><a href="/pages/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <a class=" btn-ghost text-2xl font-bold" href="#"><em>Villa Sereno</em></a>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                        <span class="badge badge-xs badge-primary indicator-item"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-6 py-20 max-w-5xl pt-[130px]">
+        <!-- Title -->
+        <h1 class="text-5xl font-bold text-gold mb-8 text-center drop-shadow-emberGlow">
+            Get In Touch
+        </h1>
+
+        <!-- Grid: Contact Info & Form -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+
+            <!-- Contact Info -->
+            <section class="space-y-8">
+                <div class="flex items-center gap-4">
+                    <i class="fa-solid fa-location-dot text-crimson text-3xl"></i>
+                    <p class="text-lg max-w-md">
+                        Najjera, Kira, 10001
+                    </p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <i class="fa-solid fa-phone text-crimson text-3xl"></i>
+                    <p class="text-lg">(+256) 767-712-846</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <i class="fa-solid fa-envelope text-crimson text-3xl"></i>
+                    <p class="text-lg">reservations@villasereno.com</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <i class="fa-solid fa-clock text-crimson text-3xl"></i>
+                    <p class="text-lg">Mon–Sat: 5PM – 11PM | Sun: Closed</p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="flex gap-8 mt-10 text-3xl text-cream">
+                    <a href="#" class="hover:text-burntorange transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-burntorange transition"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-burntorange transition"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-burntorange transition"><i
+                            class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="#" class="hover:text-burntorange transition"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </section>
+
+            <!-- Contact Form -->
+            <form netlify action="#" method="POST" class="space-y-6 bg-charcoal p-10 rounded-lg shadow-2xl shadow-[#CBA135]/40">
+                <div>
+                    <label for="name" class="block mb-2 font-semibold text-gold">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your full name" required
+                        class="input input-bordered w-full bg-cream text-black focus:ring-2 focus:ring-burntorange" />
+                </div>
+
+                <div>
+                    <label for="email" class="block mb-2 font-semibold text-gold">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required
+                        class="input input-bordered w-full bg-cream text-black focus:ring-2 focus:ring-burntorange" />
+                </div>
+
+                <div>
+                    <label for="message" class="block mb-2 font-semibold text-gold">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required
+                        class="textarea textarea-bordered w-full bg-cream text-black focus:ring-2 focus:ring-burntorange resize-none"></textarea>
+                </div>
+
+                <button type="submit"
+                    class="btn btn-primary w-full bg-crimson hover:bg-burntorange text-cream font-bold">
+                    Send Message
+                </button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <!-- Contact Section -->
+        <section class="bg-[#1B1B1B] text-[#F6E8EA] px-4 py-10">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-4xl font-bold text-[#CBA135] text-center">Contact Us</h1>
+                <hr class="w-40 border-t-4 border-[#CBA135] my-6 mx-auto">
+
+                <!-- Social Media Icons -->
+                <div class="flex justify-center gap-6 py-5 text-[#F6E8EA]">
+                    <a><i class="fa-brands fa-instagram fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-linkedin fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-facebook fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-square-x-twitter fa-2x hover:text-[#F46036] transition"></i></a>
+                    <a><i class="fa-brands fa-youtube fa-2x hover:text-[#F46036] transition"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Bottom -->
+        <p class="bg-[#1B1B1B] text-center text-[#CBA135] text-lg py-4 border-t border-[#CBA135]">
+            &copy; 2025 Villa Sereno | All rights reserved.
+        </p>
+    </footer>
+
+</body>
+
+</html>
